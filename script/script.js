@@ -4,7 +4,7 @@ document.getElementById('formChave').addEventListener('submit', function(event)
 
     const primo1 = document.getElementById('primo1Crip').value;
     const primo2 = document.getElementById('primo2Crip').value;
-    const expoente = document.getElementById('expoenteCrip').value;
+    const expoente = document.getElementById('expoenteCripgit ').value;
     const chavePub = primo1 * primo2;
     const chavePri = primo1 * primo2 ^ expoente;
 
