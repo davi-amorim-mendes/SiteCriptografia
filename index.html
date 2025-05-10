@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusCr*pt</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2><span id="nexus">Nexus</span><span id="cript">Cr*pt</span></h2>
+    </header>
+    <h1><span id="cript">Criptografia RSA ao seu<br>alcance:<span id="nexus2"> proteção<br>descomplicada</span></span></h1>
+    <main>
+        <button id="tema"><i class="fa-solid fa-key"></i> | GERAR CHAVE PÚBLICA</button>
+        <form id="formChave">
+            <label for="primo1">1. Digite 2 números primos abaixo</label><br>
+            <input type="number" name="primo1" id="primo1" placeholder="1º número primo (p)"><br>
+            <input type="number" name="primo2" id="primo2" placeholder="2º número primo (p)"><br>
+            <label for="expoente">2. Digite o expoente que será utilizado na criptografia</label><br>
+            <input type="number" name="expoente" id="expoente" placeholder="[insira o expoente]"><br>
+            <button type="submit" id="acao">GERAR CHAVE PÚBLICA</button>
+        </form>
+        <div id="resultChave">
+            <p>CHAVE PÚBLICA: <span id="chavePublica">XX XXXXXX</span></p>
+            <p>CHAVE PRIVADA: <span id="chavePrivada">XX XXXXXX</span></p>
+        </div>
+        <button id="tema"><i class="fa-solid fa-lock"></i> | ENCRIPTOGRAFAR</button>
+        <br>
+        <br>
+        <br>
+        <form id="formEncriptografar">
+            <input type="number" name="chavePublica2" id="chavePublica2" placeholder="[insira aqui a chave pública] (e, n)"><br>
+            <textarea name="mensagem" id="mensagem" placeholder="[insira aqui a mensagem a ser criptografada]"></textarea>
+            <button typcde="submit" id="acao">ENCRIPTOGRAFAR TEXTO</button>
+        </form>
+        <div id="resultMensagem">
+            <p>MENSAGEM CRIPTOGRAFADA: <span id="mensagemCriptografada">XX XXXXXX</span></p>
+        </div>
+        <button id="tema"><i class="fa-solid fa-unlock"></i> | DESCRIPTOGRAFAR</button>
+        <br>
+        <br>
+        <br>
+        <form id="formDescriptografar">
+            <input type="number" name="chavePrivada2" id="chavePrivada2" placeholder="[insira aqui a chave privada] (d, n)"><br>
+            <textarea name="mensagem2" id="mensagem2" placeholder="[insira aqui a mensagem a ser desencriptografada aqui]"></textarea>
+            <button type="submit" id="acao">DESCRIPTOGRAFAR TEXTO</button>
+        </form>
+        <div id="resultMensagem">
+            <p>MENSAGEM DESCRIPTOGRAFADA: <span id="mensagemDescriptografada">XX XXXXXX</span></p>
+        </div>
+    </main>
+</body>
+<script src="script/script.js"></script>
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+    padding: 20px;
+}
+
+body
+{
+    background-color: #2B2B2B;
+}
+
+h1
+{
+    margin-top: 100px;
+    font-family: Geist;
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+h2
+{
+    font-family: Geist mono;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+main
+{
+    padding: 50px;
+}
+
+#nexus
+{
+    color: #25DF00;
+}
+#nexus2
+{
+    color: #25DF00;
+    text-decoration:underline;
+}
+#cript
+{
+    color: aliceblue;
+}
+
+#tema
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 55px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 4px #25DF00 solid;
+    background-color: #242424;
+    color: aliceblue;
+    font-family: geist mono;
+    font-size: 20px;
+}
+
+.fa-solid
+{
+    color: rgb(255, 174, 0);
+}
+
+#acao
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1EB400;
+    color: aliceblue;
+    font-family: geist mono;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+label
+{
+    font-family: geist;
+    font-size: 18px;
+    color: aliceblue;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px;
+    border-color: #575757;
+    border-style: solid;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+input, textarea
+{
+    background-color: #242424;
+    color: aliceblue;
+    border: 1px #000000 solid;
+    width: 713px;
+    height: 60px;
+    text-align: center;
+    font-family: geist;
+    font-size: 18px;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#mensagem, #mensagem2
+{
+    height: 200px;
+}
+
+form
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultChave, #resultMensagem
+{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 700px;
+    margin-top: 30px;
+    background-color: #2A3D27;
+    border: 1px #25DF00 dashed;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+p
+{
+    color: aliceblue;
+    font-family: geist mono;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#chavePublica, #chavePrivada
+{
+    font-weight: 200;
+}
