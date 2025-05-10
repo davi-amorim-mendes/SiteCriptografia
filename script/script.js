@@ -2,9 +2,9 @@ document.getElementById('formChave').addEventListener('submit', function(event)
 {
     event.preventDefault();
 
-    const primo1 = document.getElementById('primo1').value;
-    const primo2 = document.getElementById('primo2').value;
-    const expoente = document.getElementById('expoente').value;
+    const primo1 = document.getElementById('primo1Crip').value;
+    const primo2 = document.getElementById('primo2Crip').value;
+    const expoente = document.getElementById('expoenteCrip').value;
     const chavePub = primo1 * primo2;
     const chavePri = primo1 * primo2 ^ expoente;
 
@@ -30,7 +30,9 @@ document.getElementById('formDescriptografar').addEventListener('submit', functi
 {
     event.preventDefault();
 
-    const chavePriv2 = document.getElementById('chavePrivada2').value;
+    const primo1Desc = document.getElementById('primo1Desc').value;
+    const primo2Desc = document.getElementById('primo2Desc').value;
+    const expoenteDesc = document.getElementById('expoenteDesc').value;
     const mensagem2 = document.getElementById('mensagem2').value;
 
     const mensagemView = document.querySelector('#mensagemDescriptografada');

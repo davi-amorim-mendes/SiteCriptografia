@@ -16,11 +16,11 @@
     <main>
         <button id="tema"><i class="fa-solid fa-key"></i> | GERAR CHAVE PÚBLICA</button>
         <form id="formChave">
-            <label for="primo1">1. Digite 2 números primos abaixo</label><br>
-            <input type="number" name="primo1" id="primo1" placeholder="1º número primo (p)"><br>
-            <input type="number" name="primo2" id="primo2" placeholder="2º número primo (p)"><br>
-            <label for="expoente">2. Digite o expoente que será utilizado na criptografia</label><br>
-            <input type="number" name="expoente" id="expoente" placeholder="[insira o expoente]"><br>
+            <label for="primo1Crip">1. Digite 2 números primos abaixo</label><br>
+            <input type="number" name="primo1Crip" id="primo1Crip" placeholder="1º número primo (p)"><br>
+            <input type="number" name="primo2Crip" id="primo2Crip" placeholder="2º número primo (p)"><br>
+            <label for="expoenteCrip">2. Digite o expoente que será utilizado na criptografia</label><br>
+            <input type="number" name="expoenteCrip" id="expoenteCrip" placeholder="[insira o expoente]"><br>
             <button type="submit" id="acao">GERAR CHAVE PÚBLICA</button>
         </form>
         <div id="resultChave">
@@ -44,8 +44,13 @@
         <br>
         <br>
         <form id="formDescriptografar">
-            <input type="number" name="chavePrivada2" id="chavePrivada2" placeholder="[insira aqui a chave privada] (d, n)"><br>
-            <textarea name="mensagem2" id="mensagem2" placeholder="[insira aqui a mensagem a ser desencriptografada aqui]"></textarea>
+            <label for="primo1Desc">1. Digite 2 números primos abaixo</label><br>
+            <input type="number" name="primo1Desc" id="primo1Desc" placeholder="1º número primo (p)"><br>
+            <input type="number" name="primo2Desc" id="primo2Desc" placeholder="2º número primo (p)"><br>
+            <label for="expoenteDesc">2. Digite o expoente que será utilizado na descriptografia</label><br>
+            <input type="number" name="expoenteDesc" id="expoenteDesc" placeholder="[insira o expoente]"><br>
+            <label for="mensagem2">3. Digite a mensagem a ser descriptografada</label><br>
+            <textarea name="mensagem2" id="mensagem2" placeholder="[insira aqui os blocos criptografados separados por espaço]"></textarea>
             <button type="submit" id="acao">DESCRIPTOGRAFAR TEXTO</button>
         </form>
         <div id="resultMensagem">
